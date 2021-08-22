@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    margin: 0 2px;
+}
+
+button.styless {
+    background: transparent;
+    border: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #2A3D4B;
+    padding: .4em 2.25em;
+}
+
+header .icon {
+    width: 31px;
+    height: 31px;
+    padding: 2px;
+    margin: 0 6px;
+    border-radius: 2px;
+    background-color: #007CBE;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header .icon i {
+    color: white;
+    font-size: 30px;
+}
+
+header .search-container input {
+    height: 100%;
+    width: 200px;
+    padding-left: 4px;
+}
+
+header div+header div {
+    margin-right: 10px;
+}
+
+header nav {
+    width: min-content;
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    color: rgb(37, 29, 29);
+    height: 100%;
+}
+
+header nav li {
+    color: white;
+    padding: 3px;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav li a {
+    color: white;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 5em;
+}
+
+main section.profile-section {
+    width: 100%;
+    background-color: white;
+}
+
+main section.profile-section figure.background,
+main section.profile-section figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main section.profile-section figure.background {
+    position: relative;
+    height: 300px;
+}
+
+main section.profile-section figure.background figcaption {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main section.profile-section figure.background img {
+    object-fit: cover;
+    object-position: bottom;
+}
+
+main section.profile-section .profile-photo {
+    display: flex;
+    position: relative;
+    z-index: 12;
+    padding: .3em 2em;
+}
+
+main section.profile-section .profile-photo .profile-info {
+    padding: 0 0 0 4px;
+}
+
+main section.profile-section .profile-photo figure {
+    width: 128px;
+    height: 128px;
+    border: 3px solid rgb(211, 211, 211);
+    margin-top: -90px;
+}
+
+main section.profile-section .actions {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.profile-section .actions button {
+    padding: 4px;
+    color: #007CBE;
+    border: 1px solid #007CBE;
+    border-radius: 3px;
+    background-color: white;
+    min-width: 100px;
+}
+
+main section.profile-section .actions button.follow-btn {
+    background-color: #007CBE;
+    color: white;
+}
+
+main section.profile-section .profile-photo figure {
+    object-fit: cover;
+    object-position: center;
+}
+
+main .content {
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+main .content aside.nav-aside {
+    width: 180px;
+    height: max-content;
+}
+
+main .content section.feed {
+    width: 60%;
+}
+
+main .content aside.recomm {
+    width: 20%;
+}
+
+main .content aside.nav-aside ul li {
+    padding: .45em;
+}
+
+main .content aside.nav-aside ul li {
+    position: relative;
+}
+
+main .content aside.nav-aside ul li.active * {
+    color: #007CBE;
+}
+
+main .content aside.nav-aside ul li.active::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #007CBE;
+}
+
+main .content aside.nav-aside ul li+li {
+    border-top: 1px solid rgb(224, 224, 224);
+}
+
+main .content section.feed article {
+    width: 100%;
+    padding: .6em;
+}
+
+main .content section.feed article+article {
+    margin-top: 10px;
+}
+
+main .content section.feed article .top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 1em 0;
+}
+
+main .content section.feed article .top img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+main .content section.feed article .top p {
+    padding: .25em;
+}
+
+main .content section.feed .jobs {
+    display: flex;
+    padding: .25em 0;
+}
+
+main .content section.feed .jobs .job {
+    padding: .6em;
+    display: flex;
+}
+
+main .content section.feed .jobs .job img {
+    width: 100px;
+    height: 100px;
+}
+
+main .content section.feed .jobs .job p {
+    padding-left: 6px;
+}
+
+main .content section.feed .jobs .job+.job {
+    margin-left: 10px;
+}
+
+main .content aside.recomm {
+    display: flex;
+    flex-direction: column;
+}
+
+main .content aside.recomm .page {
+    width: 100%;
+    display: flex;
+    padding: 1em;
+}
+
+main .content aside.recomm .page .page-info {
+    display: flex;
+}
+
+main .content aside.recomm .page .page-info p {
+    font-size: 16px;
+    padding-left: 6px;
+}
+
+main .content aside.recomm .page .page-info img {
+    width: 60px;
+    height: 60px;
+}
+
+.border-left {
+    border-left: 1px solid white;
+}
+
+.text-active {
+    color: #007CBE;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: white;
+}
