@@ -193,12 +193,15 @@ main .content aside.nav-aside ul li {
 
 main .content aside.nav-aside ul li {
     position: relative;
+    transition: all .3s;
 }
 
+main .content aside.nav-aside ul li:hover *,
 main .content aside.nav-aside ul li.active * {
     color: #007CBE;
 }
 
+main .content aside.nav-aside ul li:hover::after,
 main .content aside.nav-aside ul li.active::after {
     position: absolute;
     content: '';
@@ -266,6 +269,10 @@ main .content section.feed .jobs .job+.job {
 main .content aside.recomm {
     display: flex;
     flex-direction: column;
+}
+
+main .content aside.recomm .pages {
+    padding: 1em;
 }
 
 main .content aside.recomm .page {
