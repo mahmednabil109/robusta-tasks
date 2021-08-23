@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="search">
         <div class="icon">
-            <i class="fab fa-linkedin-in"></i>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
         </div>
         <div class="search-container">
             <input type="text" id="search-input" class="input" placeholder="search for ...">
@@ -21,29 +21,48 @@
         <nav>
             <ul>
                 <li>
-                    <a><i class="fas fa-home"></i></a>
+                    <a href="">
+                        <i class="fas fa-home"></i>
+                        <p>Home</p>
+                    </a>
                 </li>
                 <li>
-                    <a><i class="fas fa-user-friends"></i></a>
+                    <a href="">
+                        <i class="fas fa-user-friends"></i>
+                        <p>My Networks</p>
+
+                    </a>
                 </li>
                 <li>
-                    <a><i class="fas fa-briefcase"></i></a>
+                    <a href="">
+                        <i class="fas fa-briefcase"></i>
+                        <p>Jobs</p>
+                    </a>
                 </li>
                 <li>
-                    <a><i class="fas fa-envelope"></i></a>
+                    <a href="">
+                        <i class="fas fa-envelope"></i>
+                        <p>Messaging</p>
+                    </a>
                 </li>
                 <li>
-                    <a><i class="fas fa-bell"></i></a>
+                    <a href="">
+                        <i class="fas fa-bell"></i>
+                        <p>Notifications</p>
+                    </a>
                 </li>
 
                 <li class="border-left">
-                    <a><i class="fas fa-th"></i></a>
+                    <a href="">
+                        <i class="fas fa-th"></i>
+                        <p>Work</p>
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="profile-section card">
+        <header class="profile-section card">
             <figure class="background">
                 <img src="http://i.stack.imgur.com/vhoa0.jpg" alt="profile background">
                 <figcaption>editable</figcaption>
@@ -53,14 +72,14 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zXrbLmTNAL9Rcgw2Tmrmi7nkrfMTVjFBFA&usqp=CAU" alt="profile background">
                 </figure>
                 <div class="profile-info">
-                    <h3>this is the user name</h3>
+                    <h2>this is the user name</h2>
                     <p><small>this is the user title</small></p>
                 </div>
             </div>
             <div class="actions">
                 <div class="buttons">
                     <button class="follow-btn"> <i class="fas fa-plus"></i>Follow</button>
-                    <button>Visit website <i class="fas fa-external-link-alt"></i></button>
+                    <a href="" class="btn">Visit website <i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="links">
                     <a href="anywhere" class="text-active">
@@ -69,7 +88,7 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </header>
         <div class="content">
             <aside class="nav-aside card">
                 <ul>
@@ -85,12 +104,12 @@
             <section class="feed">
                 <article class="card videos">
                     <h2>Recently posted vedios</h2>
-                    <div class="top">
+                    <article class="top">
                         <img src="http://i.stack.imgur.com/vhoa0.jpg" alt="post photo">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam beatae accusamus expedita distinctio sint blanditiis ratione dolorem dolores facere a, fugit nam aut. Veniam hic delectus laborum voluptatibus fuga.
                         </p>
-                    </div>
+                    </article>
                     <div class="actions">
                         <a href=""><i class="fas fa-plus"></i> More posts...</a>
                     </div>
@@ -99,16 +118,20 @@
                 <article class="card jobs-article">
                     <h2>5 Recently posted jobs</h2>
                     <div class="jobs">
-                        <div class="job card">
-                            <img src="http://i.stack.imgur.com/vhoa0.jpg" alt="post photo">
+                        <a href="">
+                            <article class="job card">
+                                <img src="http://i.stack.imgur.com/vhoa0.jpg" alt="post photo">
 
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, rerum. Eius fugiat inventore </p>
-                        </div>
-                        <div class="job card">
-                            <img src="http://i.stack.imgur.com/vhoa0.jpg" alt="post photo">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, rerum. Eius fugiat inventore </p>
+                            </article>
+                        </a>
+                        <a href="">
+                            <article class="job card">
+                                <img src="http://i.stack.imgur.com/vhoa0.jpg" alt="post photo">
 
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, rerum. Eius fugiat inventore</p>
-                        </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, rerum. Eius fugiat inventore</p>
+                            </article>
+                        </a>
                     </div>
                     <div class="actions">
                         <a href=""><i class="fas fa-plus"></i> More posts...</a>
