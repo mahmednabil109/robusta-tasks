@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a.btn {
+    text-decoration: none;
+    width: max-content;
+}
+
+article.container {
+    display: flex;
+    max-width: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+article.container .card {
+    height: 500px;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+article.card h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+article.card p {
+    padding: 20px 0;
+}
+
+article.card .btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 31px;
+    margin-top: auto;
+}
+
+.card {
+    padding: 10px;
+}
+
+.sedans {
+    background-color: #E28525;
+}
+
+.sedans .btn {
+    color: #E28525;
+}
+
+.suvs {
+    background-color: #016972;
+}
+
+.suvs .btn {
+    color: #016972;
+}
+
+.luxury {
+    background-color: #00403F;
+}
+
+.luxury .btn {
+    color: #00403F;
+}
+
+.attribution {
+    margin-top: auto;
+}
+
+@media(max-width: 1000px) {
+    article.container {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+}
